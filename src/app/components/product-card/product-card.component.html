@@ -1,1 +1,10 @@
-<p>product-card works!</p>
+<div class="card">
+  <div class="product">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <strong>{{ product.price | currency }}</strong>
+  </div>
+  <div>
+    <button (click)="addToCart.emit()">Add or Remove from cart</button>
+  </div>
+</div>

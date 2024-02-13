@@ -5,7 +5,7 @@ import {Product} from "../models/product";
 @Injectable({
   providedIn: 'root'
 })
-export class ProductsServiceService {
+export class ProductsService {
 
   public GetProducts(){
     return of([
